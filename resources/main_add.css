@@ -120,27 +120,16 @@ nav {
 main {
     width: 100%;
     display: flex;
-    top: 30rem;
     justify-content: center;
-    margin-bottom: 3rem;
-    flex-wrap: wrap;
 }
 
 figure {
-    border: 3px solid black;
-    border-radius: 5px;
-    background-color: rgba(32, 31, 31, 0.568);
-    margin: 2rem;
+    margin-bottom: 2rem;
 }
 
-figcaption {
-    font-size: 2rem;
-    text-align: center;
+figure img {
+    border-radius: 5px;
 }
-main a {
-    text-decoration: none;
-    color: white;
-} 
 
 /* Footer */
 
