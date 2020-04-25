@@ -26,6 +26,15 @@ header {
     justify-content: center;
 }
 
+@media only screen and (max-width: 1100px) {
+    header {
+        font-size: 2rem;
+    }
+    .logo img {
+        max-width: 5rem;
+    }
+}
+
 /* Header mobile */
 
 @media only screen and (max-width: 400px) {
@@ -125,6 +134,23 @@ nav {
     }
 }
 
+@media only screen and (max-width: 1100px) {
+    .pierwszy li {
+        font-size: 1rem;
+        max-width: 9rem;
+        max-height: 2rem;
+        line-height: 2rem;
+    }
+    .drugi li {
+        list-style: none;
+        font-size: .7rem;
+        width: 9rem;
+        height: 2rem;
+        line-height: 2rem;
+        text-align: center;
+    }
+}
+
 @media only screen and (max-width: 400px) {
         nav {
             display: none;
@@ -170,6 +196,19 @@ main a {
     color: white;
 } 
 
+@media only screen and (max-width: 1100px) {
+    figure img {
+        max-width: 100%;
+    }
+    figure {
+        max-width: 80%;
+        margin: 1rem;
+    }
+    figcaption {
+        font-size: 1.5rem;
+    } 
+}
+
 @media only screen and (max-width: 400px) {
     .przepisy {
         background-color: rgba(32, 31, 31, 0.568);
@@ -189,10 +228,11 @@ main a {
     }
     figure {
         margin: 1rem;
+        max-width: 100%;
     }
     .przepisy {
         top: 0;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 }
 
@@ -208,6 +248,10 @@ footer {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+}
+
+footer h6 {
+    margin-right: 1rem;
 }
 
 @media only screen and (max-width: 400px) {
