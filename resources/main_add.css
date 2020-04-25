@@ -37,6 +37,16 @@ header {
 
 /* Header mobile */
 
+@media only screen and (max-width: 550px){
+    header {
+        font-size: 1rem;
+        padding: 1rem 1rem 0 1rem;
+    }
+    .logo img {
+        width: 3.5rem;
+    }
+}
+
 @media only screen and (max-width: 400px) {
     header {
         font-size: 1rem;
@@ -197,6 +207,33 @@ figure img {
 @media only screen and (max-width: 1100px) {
     figure img {
         max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .przepisy {
+        background-color: rgba(32, 31, 31, 0.568);
+        color: white;
+        padding: 1rem 0;
+    }
+    main {
+        flex-direction: column;
+        margin-bottom: .5rem;
+    }
+    figure img {
+        max-width: 100%;
+    }
+    figcaption {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    figure {
+        margin: 1rem;
+        max-width: 100%;
+    }
+    .przepisy {
+        top: 0;
+        margin-bottom: 1rem;
     }
 }
 
