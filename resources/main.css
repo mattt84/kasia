@@ -114,7 +114,7 @@ nav {
     display: block;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1300px) {
     .pierwszy li {
         width: 14rem;
         height: 3rem;
@@ -148,6 +148,19 @@ nav {
         height: 2rem;
         line-height: 2rem;
         text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .drugi li {
+        display: none;
+    }
+    nav {
+        flex-wrap: wrap;
+        position: relative;
+    }
+    .food {
+        margin-bottom: 1rem;
     }
 }
 
