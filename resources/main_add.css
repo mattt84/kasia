@@ -9,7 +9,7 @@ body {
     background-color: black;
     color: white;
     font-family: 'Baloo Paaji 2', cursive;
-    background-image: url(./img/output-onlinejpgtools.jpg);
+    background-image: url(./img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -26,6 +26,16 @@ header {
     justify-content: center;
 }
 
+/* Header mobile */
+
+@media only screen and (max-width: 400px) {
+    header {
+        font-size: 1rem;
+    }
+    .logo img {
+        width: 3.5rem;
+    }
+}
 
 /* Pasek Nawigacji */
 
@@ -94,6 +104,32 @@ nav {
     display: block;
 }
 
+@media only screen and (min-width: 1200px) {
+    .pierwszy li {
+        width: 14rem;
+        height: 3rem;
+        line-height: 3rem;
+        text-align: center;
+        font-size: 1.5rem;
+        position: relative;
+    }
+
+    .drugi li {
+        list-style: none;
+        font-size: 1rem;
+        width: 14rem;
+        height: 3rem;
+        line-height: 3rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    nav {
+        display: none;
+    }
+}
+
 /* Przepisy */
 
  .przepisy {  
@@ -129,6 +165,33 @@ figure {
 
 figure img {
     border-radius: 5px;
+    border: 1rem solid rgba(0, 0, 0, 0.37);
+}
+
+@media only screen and (max-width: 400px) {
+    .przepisy {
+        background-color: rgba(32, 31, 31, 0.568);
+        color: white;
+        padding: 1rem 0;
+    }
+    main {
+        flex-direction: column;
+        margin-bottom: .5rem;
+    }
+    figure img {
+        max-width: 100%;
+    }
+    figcaption {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    figure {
+        margin: 1rem;
+    }
+    .przepisy {
+        top: 0;
+        margin-bottom: 2rem;
+    }
 }
 
 /* Footer */
@@ -143,4 +206,11 @@ footer {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+}
+
+@media only screen and (max-width: 400px) {
+    footer {
+        font-size: 1rem;
+        height: 3rem;
+    }
 }
